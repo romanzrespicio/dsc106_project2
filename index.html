@@ -154,7 +154,7 @@
                 Persuasive or Deceptive Visualization?
             </h1>
 
-            <p><strong>Your Name</strong> — <em>Your UCSD Email Address</em></p>
+            <p><strong>Roman Respicio(rrespicio@ucsd.edu), Rishvik Ravi(r4ravi@ucsd.edu), Lex Hou(lehou@ucsd.edu)</strong></p>
         </header>
 
         <main>
@@ -183,15 +183,28 @@
 
                 <figure>
                     <img src="viz_available.png" alt="" />
-                    <figcaption>BRIEF CAPTION HERE.</figcaption>
+                    <figcaption>Bar and dot plots showing how U.S. states are grouped by composite abortion-access tier and how their individual composite scores are distributed around the median.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>RATIONALE_1</li>
-                    <li>RATIONALE_2</li>
-                    <li>RATIONALE_3</li>
+                    <li>I combined two access-related measures into a single composite_access to give the
+                        audience a quick sense of an overall pattern. They don’t have to juggle multiple axes.
+                        That’s compelling because it gives a nice “access tiers” story, but that particular 0.6/0.4
+                        weighting still leaves the judgement in there. I considered equal weighting (0.5/0.5), but I
+                        chose 0.6/0.4 because the travel burden seemed a little more direct as a user-facing
+                        barrier. That decision is defensible but not value-free. (Score: +1.0)</li>
+                    <li>Binning is much more convincing to a general reader, turning a continuous distribution
+                        into a simple count story (“many states are moderate/high”). The downside is that
+                        threshold boundaries can shift interpretation close to cut points. I considered using fixed
+                        policy-like thresholds, but the quantiles generated balanced bins and a cleaner visual
+                        composition. I chose readability over strict substantive cutoffs. (Score: +0.5)</li>
+                    <li>The bars quickly make the aggregate claim, while the dot-strip shows individual state
+                        spread so the chart is not completely aggregated. This pairing helped persuasion—by
+                        pairing a headline takeaway with transparency around underlying variation. I thought
+                        about doing only bars (more on the rhetoric side) or only dots (more on the analytic side),
+                        but the hybrid had the best trade-off between persuasion and credibility. (Score: +1.5)</li>
                 </ul>
             </section>
 
